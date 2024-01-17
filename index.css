@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.home-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: url(images/circlebg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.container{
+    display: flex; 
+    
+    position: relative;
+    z-index: 10;
+    margin: 50px auto;
+    padding: 0 20px;
+    height: 600px;
+    width: 1200px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow:  0 8px 15px 0px rgba(0, 0, 0, 0.37)  ;
+}
+.container nav{
+    height: 7%;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+.container .logo{
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 35px;
+}
+.container .logo::first-letter{
+    color: #000;
+    font-size: 40px;
+}
+.container nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.container nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
+    
+}
+.container nav ul li a:hover{
+    color: #9d9e9e;
+}
+.content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    padding-left: 50px;
+}
+.content .section1{
+    top: 50px;
+    position: relative;
+    width: 50%;
+}
+.content .section1 h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 700;
+}
+.content .section1 h3{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #543d8a;
+}
+.content .section1 p{
+    font-size: 20px;
+
+}
+
+.content .picture{
+    width: 40%;
+    position: relative;
+}
+.content .picture img{
+    width: 100%;
+}
+.content .section1 button{
+    height: 50px;
+    width: 120px;
+    border-radius: 50px;
+    border: 2px solid #543d8a;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 120px 10px 10px 0;
+    background-color: #d9cef2;
+    letter-spacing: 2px;
+}
+#second-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+.about-container .about-card{
+    width: 350px;
+    height: 450px;
+    position: relative;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow:  0 8px 15px 0px rgba(0, 0, 0, 0.37)  ;
+    justify-content: center;
+    align-items: center;
+    
+}
+.about-container .about-card .card-image{
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 0;
+margin: 5px;
+height: 250px;
+width: 340px;
+background-color: white;
+border-radius: 20px;
+
+}
+.about-container .about-card .card-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.about-container .about-card .idetail{
+    position: relative;
+    margin: 0 5px 0 5px;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+}
+.about-container .about-card .idetail h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+
+}
+.about-container .about-card .idetail p{
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+    font-family: cursive;
+}
+.about-container .about-card .idetail p span{
+    font-weight: 600;
+    position: relative;
+    margin-right: 5px;
+}
+.about-container .about-card .i-details{
+    position: relative;
+    margin: 0 5px 0 5px;
+    top: 88px;
+    display: flex;
+    flex-direction: column;
+}
+.about-container .about-card .i-details h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+
+}
+.about-container .about-card .i-details ul li{
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+    font-family: cursive;
+}
+.about-container .about-card .i-school{
+    position: relative;
+    margin: 0 5px 0 5px;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    height: 25vh;
+    width: 100%;
+}
+.contact-container{
+    width: 100%;
+    height: 300px;
+    display: grid;
+    
+    place-items: center;
+}
+.contact-icons{
+    display: inline-flex;
+}
+.contact-icons .icon{
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-icons .icon.facebook .google .instagram .contact i {
+    font-size: 25px;
+    line-height: 40px;
+    color: black; 
+    transition: color 0.3s ease;
+}
+
+.contact-icons .icon.facebook:hover i {
+    color: #fff; 
+}
+
+.contact-icons .icon.facebook:hover span {
+    background: blue;
+}
+
+.contact-icons .icon.facebook:hover a {
+    color: white;
+}
+.contact-icons .icon.google:hover i{
+color: red;
+}
+
+.contact-icons .icon.google:hover span {
+    background: #fff;
+}
+
+.contact-icons .icon.google:hover a {
+    color: white;
+}
+.contact-icons .icon.instagram:hover i{
+    color: red;
+    }
+    
+    .contact-icons .icon.instagram:hover span {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+
+    }
+    
+    .contact-icons .icon.instagran:hover a {
+        color: white;
+    }
+.contact-icons .icon span{
+    height: 40px;
+    position: relative;
+    z-index: 2;
+    width: 40px;
+    display: block;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.contact-icons .icon span i{
+    font-size: 25px;
+    line-height: 40px;
+}
+.contact-icons .icon span a{
+    text-decoration: none;
+    color: black;
+}
+.social-icons a:hover {
+    background: #3B5999;
+}
